@@ -338,3 +338,21 @@ p { line-height: 1.7; }
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ── FULL WIDTH FIX ── */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.pg {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero-slider {
+  width: 100vw;
+  max-width: 100%;
+  margin-left: calc(-50vw + 50%);
+}

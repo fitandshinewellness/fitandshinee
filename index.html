@@ -17,11 +17,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/pages.css">
 <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <body>
 
@@ -710,7 +710,7 @@
       <div class="info-card"><span class="ib-icon">📍</span><div><h4>Our Location</h4><p>Gate No 1, Block-E, GANESH GLORY, 213A, Sarkhej–Gandhinagar Hwy, Gota, Ahmedabad, Gujarat 382470</p><a href="https://maps.app.goo.gl/1pSUGmrikTovNou16" target="_blank" rel="noopener noreferrer" class="info-link mt-6">Get Directions →</a></div></div>
       <div class="info-card clickable" onclick="openWA()"><span class="ib-icon">💬</span><div><h4>WhatsApp</h4><p>+91 98244 55234</p><span class="info-link mt-6">Chat with us now →</span></div></div>
       <div class="info-card"><span class="ib-icon">📞</span><div><h4>Phone</h4><a href="tel:+919824455234" class="info-link">+91 98244 55234</a><p class="mt-4">Mon–Sat: 7:00 AM – 8:00 PM</p></div></div>
-      <div class="info-card"><span class="ib-icon">📧</span><div><h4>Email</h4><a href="mailto:info@fitandshine.com" class="info-link">info@fitandshine.com</a></div></div>
+      <div class="info-card"><span class="ib-icon">📧</span><div><h4>Email</h4><a href="mailto:fitandshinewellness@gmail.com" class="info-link">fitandshinewellness@gmail.com</a></div></div>
       <div class="info-card"><span class="ib-icon">📸</span><div><h4>Instagram</h4><a href="https://www.instagram.com/coachkartikshilpa/" target="_blank" rel="noopener noreferrer" class="info-link">@coachkartikshilpa</a></div></div>
       <div class="info-card"><span class="ib-icon">🕐</span><div><h4>Business Hours</h4><p>Monday – Saturday: 7:00 AM – 8:00 PM</p><p class="mt-4">Sunday: 10:00 AM – 6:00 PM</p></div></div>
     </div>
@@ -719,6 +719,7 @@
 </div>
 
 <!-- ═══ PAGE: BOOK APPOINTMENT ═══ -->
+
 <div id="p-book" class="pg">
   <div class="book-layout">
     <div class="book-left">
@@ -750,23 +751,17 @@
     <div class="book-right">
       <h3 class="bk-form-title">Schedule Your Visit</h3>
       <p class="bk-form-sub">Fill in the details below — takes less than 2 minutes</p>
-      <div class="bk-toast" id="bk-toast">✅ Appointment booked! We'll send a WhatsApp confirmation shortly.</div>
-      <form id="book-form" onsubmit="bkSubmit(event)">
+      <div class="bk-toast" id="bk-toast">✅ Booking received! WhatsApp confirmation being sent to your number.</div>
+      <div id="book-form">
         <div class="fg-row">
-          <div class="fg"><label>First Name *</label><input type="text" placeholder="Priya" required></div>
-          <div class="fg"><label>Last Name *</label><input type="text" placeholder="Sharma" required></div>
+          <div class="fg"><label>First Name *</label><input type="text" name="first_name" placeholder="Priya" required></div>
+          <div class="fg"><label>Last Name *</label><input type="text" name="last_name" placeholder="Sharma" required></div>
         </div>
-        <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" placeholder="+91 98765 43210" required></div>
-        <div class="fg"><label>Email Address</label><input type="email" placeholder="you@email.com"></div>
-        <div class="fg"><label>Service Interested In *</label><select required><option value="">Select a service...</option><option>Weight Loss</option><option>Weight Gain</option><option>Energy &amp; Fitness</option><option>Lifestyle Diseases (Diabetes/Thyroid/PCOD)</option><option>Sports Nutrition</option><option>Child Nutrition</option><option>Skin Care Nutrition</option><option>Joints Nutrition</option><option>Online &amp; Offline Workouts</option></select></div>
-        <div class="fg"><label>Your Primary Goal</label><select><option value="">Select your main goal...</option><option>Lose weight (general)</option><option>Lose belly fat / inch loss</option><option>Post-pregnancy recovery</option><option>Body toning &amp; slimming</option><option>Detox &amp; improve energy</option><option>Improve nutrition &amp; diet</option><option>Overall wellness</option></select></div>
-        <div class="fg-row">
-          <div class="fg"><label>Preferred Date</label><input type="date" id="bk-date"></div>
-          <div class="fg"><label>Preferred Time</label><select><option value="">Select time...</option><option>7:00 AM – 10:00 AM</option><option>10:00 AM – 1:00 PM</option><option>1:00 PM – 4:00 PM</option><option>4:00 PM – 8:00 PM</option></select></div>
-        </div>
-        <div class="fg"><label>Health Notes / Questions</label><textarea placeholder="Any health conditions, concerns, or specific questions for our team..."></textarea></div>
-        <button type="submit" class="btn-submit">📅 Confirm My Booking</button>
-      </form>
+        <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required></div>
+        <div class="fg"><label>Service Interested In *</label><select name="service" required><option value="">Select a service...</option><option>Weight Loss</option><option>Weight Gain</option><option>Energy &amp; Fitness</option><option>Lifestyle Diseases (Diabetes/Thyroid/PCOD)</option><option>Sports Nutrition</option><option>Child Nutrition</option><option>Skin Care Nutrition</option><option>Joints Nutrition</option><option>Online &amp; Offline Workouts</option></select></div>
+        <div class="fg"><label>Health Notes / Questions</label><textarea name="health_notes" placeholder="Any health conditions, concerns, or specific questions for our team..."></textarea></div>
+        <button type="button" class="btn-submit" onclick="bkSubmit()">Submit</button>
+      </div>
     </div>
   </div>
 </div>
@@ -786,7 +781,7 @@
     </div>
     <div><div class="fc-head">Quick Links</div><ul class="fc-links"><li onclick="go('home')">Home</li><li onclick="go('services')">Services</li><li onclick="go('about')">About Us</li><li onclick="go('testimonials')">Testimonials</li><li onclick="go('contact')">Contact Us</li><li onclick="go('book')">Book Consultation</li></ul></div>
     <div><div class="fc-head">Our Services</div><ul class="fc-links"><li onclick="go('services')">Weight Loss</li><li onclick="go('services')">Weight Gain</li><li onclick="go('services')">Sports Nutrition</li><li onclick="go('services')">Child Nutrition</li><li onclick="go('services')">Skin Care</li><li onclick="go('services')">Joints Nutrition</li></ul></div>
-    <div><div class="fc-head">Connect With Us</div><ul class="fc-links"><li onclick="openWA()">💬 WhatsApp Us</li><li><a href="tel:+919824455234">📞 +91 98244 55234</a></li><li><a href="mailto:info@fitandshine.com">📧 info@fitandshine.com</a></li><li><a href="https://www.instagram.com/coachkartikshilpa/" target="_blank" rel="noopener noreferrer">📸 @coachkartikshilpa</a></li></ul></div>
+    <div><div class="fc-head">Connect With Us</div><ul class="fc-links"><li onclick="openWA()">💬 WhatsApp Us</li><li><a href="tel:+919824455234">📞 +91 98244 55234</a></li><li><a href="mailto:fitandshinewellness@gmail.com">📧 fitandshinewellness@gmail.com</a></li><li><a href="https://www.instagram.com/coachkartikshilpa/" target="_blank" rel="noopener noreferrer">📸 @coachkartikshilpa</a></li></ul></div>
   </div>
   <div class="footer-bot">
     <p>© 2025 Fit &amp; Shine Wellness Centre, Ahmedabad. All rights reserved.</p>

@@ -54,6 +54,7 @@ var SLIDES_DATA = [
 var REVIEWS_DATA = [
   { name: 'Kajal Khatari',  location: 'Ahmedabad', text: 'Ye Nutrition Centre sirf diet nahi, proper care aur support deta hai. Yahan ki guidance se 8 kg weight gain, better digestion aur improved energy feel ho rahi hai. Team hamesha motivate karti hai. Dil se thank you Shilpa mam & Kartik sir!', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop' },
   { name: 'Shital Patel',   location: 'Ahmedabad', text: 'Fit & Shine Wellness Centre provides the best service related to health. They suggest proper well-balanced nutrition, physical exercise, and health motivation ideas. This centre helped me maintain my healthy journey. Thank you!', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop' },
+  { name: 'Jasmit Patel',   location: 'Ahmedabad', text: 'Fit and Shine Wellness Center combines effective exercise programs with personalised nutritional guidance in a supportive, welcoming environment focused on overall health and wellness.', img: 'https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=100&h=100&fit=crop' },
   { name: 'Roshan',         location: 'Ahmedabad', text: 'The team is very supportive and guides you step by step in your health journey. The nutrition plans are easy to follow, sustainable, and designed according to personal goals. I feel more energetic, healthier, and motivated after joining!', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop' },
   { name: 'Patel Mehul',    location: 'Ahmedabad', text: "I've seen amazing results in my energy levels, fitness, and confidence. The atmosphere is friendly and motivating, which makes it easier to stay consistent. They focus on overall health and wellness, not just weight management. Highly recommended!", img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop' },
   { name: 'Vidhi Shah',     location: 'Ahmedabad', text: "3 months at Fit and Shine for weight reduction. The core objective here is not only to lose weight but to be more balanced nutritiously. The exercise and diet regime keeps you energetic through the day despite workout and diet modification. Surely will recommend!", img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop' },
@@ -91,6 +92,7 @@ var VIDEO_TESTIMONIALS = [
 var FULL_REVIEWS = [
   { name: 'Kajal Khatari',  loc: 'Ahmedabad', text: 'Ye Nutrition Centre sirf diet nahi, proper care aur support deta hai. Yahan ki guidance se 8 kg weight gain, better digestion aur improved energy feel ho rahi hai. Team hamesha motivate karti hai. Dil se thank you so much Shilpa mam & Kartik sir!', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop', badge: 'Weight Gain Program' },
   { name: 'Shital Patel',   loc: 'Ahmedabad', text: 'Fit & Shine Wellness Centre provides the best service related to health. They suggest proper well-balanced nutrition, physical exercise, and health motivation ideas. This centre helped me maintain my healthy journey. Thank you very much!', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop', badge: 'Nutrition & Wellness' },
+  { name: 'Jasmit Patel',   loc: 'Ahmedabad', text: 'Fit and Shine Wellness Center combines effective exercise programs with personalised nutritional guidance in a supportive, welcoming environment focused on overall health and wellness.', img: 'https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=80&h=80&fit=crop', badge: 'Wellness Program' },
   { name: 'Roshan',         loc: 'Ahmedabad', text: 'I had an amazing experience at Fit & Shine Wellness Centre. The team is very supportive and guides you step by step. The nutrition plans are easy to follow, sustainable, and designed according to personal goals. I feel more energetic, healthier, and motivated. Highly recommend!', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop', badge: 'Health & Fitness' },
   { name: 'Patel Mehul',    loc: 'Ahmedabad', text: "I've seen amazing results in my energy levels, fitness, and confidence. They focus not only on weight management but also on overall health and wellness. The atmosphere is friendly and motivating. Highly recommended for anyone who wants to live a healthier lifestyle!", img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop', badge: 'Lifestyle Transformation' },
   { name: 'Ravi Patel',     loc: 'Ahmedabad', text: 'This is more than just a fitness club — it is a complete health and wellness experience! Expert fitness training and personalised nutrition guidance combined. I feel stronger, healthier, and more confident since joining. Highly recommend to anyone serious about transforming their lifestyle!', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop', badge: 'Complete Wellness' },
@@ -431,15 +433,56 @@ function initBookingForm() {
   if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
 }
 
-function bkSubmit(e) {
-  e.preventDefault();
+function bkSubmit() {
+  var form  = document.getElementById('book-form');
+  var btn   = document.querySelector('.btn-submit');
   var toast = document.getElementById('bk-toast');
+
+  function fv(name) {
+    var el = form ? form.querySelector('[name="' + name + '"]') : null;
+    return el ? (el.value || '').trim() : '';
+  }
+
+  var firstName = fv('first_name');
+  var lastName  = fv('last_name');
+  var phone     = fv('phone');
+  var service   = fv('service');
+  var notes     = fv('health_notes');
+  var fullName  = (firstName + ' ' + lastName).trim();
+
+  if (!firstName) { alert('Please enter your first name.'); return; }
+  if (!phone)     { alert('Please enter your WhatsApp / Phone number.'); return; }
+  if (!service)   { alert('Please select a service.'); return; }
+
+  var ln = '\n';
+  var ownerMsg = 'New Appointment Request' + ln
+    + 'Fit & Shine Wellness Centre' + ln + ln
+    + 'Name: '    + fullName + ln
+    + 'Phone: '   + phone    + ln
+    + 'Service: ' + service  + ln
+    + (notes ? 'Notes: ' + notes + ln : '');
+
+  if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
+
+  window.open('https://wa.me/919824455234?text=' + encodeURIComponent(ownerMsg), '_blank');
+
+  showBookingSuccess(form, btn, toast, firstName);
+}
+
+function showBookingSuccess(form, btn, toast, name) {
   if (toast) {
     toast.style.display = 'block';
-    setTimeout(function () { toast.style.display = 'none'; }, 5000);
+    toast.innerHTML = '<strong>Submitted!</strong> Your details have been sent to our team. We will contact you shortly.';
+    setTimeout(function() { toast.style.display = 'none'; }, 8000);
   }
-  e.target.reset();
+  if (btn) { btn.disabled = false; btn.textContent = 'Submit'; }
+  if (form) {
+    form.querySelectorAll('input, select, textarea').forEach(function(el) {
+      el.value = '';
+    });
+  }
 }
+
 
 /* ============================================================
    12. KEYBOARD NAVIGATION
