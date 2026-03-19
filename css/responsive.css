@@ -209,19 +209,32 @@
   .results-grid {
     grid-template-columns: 1fr;
   }
+  /* Keep before/after SIDE BY SIDE on mobile — not stacked */
   .result-imgs-pair {
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
   }
   .result-arrow {
-    text-align: center;
-    transform: rotate(90deg);
+    font-size: 16px;
+    padding: 0;
   }
+  /* Shorter images on mobile so full card is visible */
   .result-img-wrap img {
-    height: 200px;
+    height: 160px;
+    object-position: top center;
   }
   .result-card-single .result-img-single img {
-    height: 240px;
+    height: 220px;
+    object-position: top center;
+  }
+  /* Slightly smaller card padding on mobile */
+  .result-card {
+    padding: 12px;
+  }
+  .result-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    margin-bottom: 10px;
   }
   .fcard img {
     height: 300px;
