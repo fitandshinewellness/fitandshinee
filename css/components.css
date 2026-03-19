@@ -217,14 +217,14 @@
   font-family: var(--serif);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--y);
+  color: #FFFFFF;
   line-height: 1;
   display: block;
 }
 
 .hsb-label {
   font-size: 11.5px;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.7);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .8px;
@@ -235,7 +235,7 @@
 /* ── TREATMENT STRIP ── */
 .treatment-strip {
   background: #fff;
-  border-bottom: 1.5px solid #ccebd8;
+  border-bottom: 1.5px solid #EAD9A8;
 }
 
 .ts-inner {
@@ -248,7 +248,7 @@
 .ts-item {
   padding: 20px 16px;
   text-align: center;
-  border-right: 1px solid #e4f4ec;
+  border-right: 1px solid #F2E8D0;
   transition: .25s;
   position: relative;
   cursor: pointer;
@@ -281,7 +281,7 @@
   grid-template-columns: repeat(3, 1fr);
   border-radius: 22px;
   overflow: hidden;
-  border: 1.5px solid #ccebd8;
+  border: 1.5px solid #EAD9A8;
 }
 
 .svc-card {
@@ -289,8 +289,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #ccebd8;
-  border-bottom: 1px solid #ccebd8;
+  border-right: 1px solid #EAD9A8;
+  border-bottom: 1px solid #EAD9A8;
   transition: .4s;
 }
 
@@ -301,7 +301,7 @@
   background: var(--yl);
   transform: translateY(-3px);
   z-index: 2;
-  box-shadow: 0 14px 44px rgba(0,61,46,.14);
+  box-shadow: 0 14px 44px rgba(184,137,42,.14);
 }
 
 .svc-img {
@@ -371,7 +371,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgba(0,61,46,.1);
+  border-top: 1px solid rgba(184,137,42,.1);
   padding-top: 13px;
   margin-top: auto;
 }
@@ -398,7 +398,7 @@
 .svc-btn:hover {
   background: var(--gm);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0,61,46,.3);
+  box-shadow: 0 4px 12px rgba(184,137,42,.3);
 }
 
 /* ── TESTIMONIALS CAROUSEL ── */
@@ -422,17 +422,17 @@
   background: #fff;
   border-radius: 20px;
   padding: 28px;
-  border: 1.5px solid #ccebd8;
+  border: 1.5px solid #EAD9A8;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   transition: .3s;
-  box-shadow: 0 2px 12px rgba(0,61,46,.07);
+  box-shadow: 0 2px 12px rgba(184,137,42,.07);
 }
 
 .testi-card:hover {
-  box-shadow: 0 8px 32px rgba(0,61,46,.1);
-  border-color: #95d4a8;
+  box-shadow: 0 8px 32px rgba(184,137,42,.1);
+  border-color: #C9A84C;
 }
 
 .testi-quote {
@@ -463,7 +463,7 @@
   display: flex;
   align-items: center;
   gap: 13px;
-  border-top: 1px solid #e0f0e6;
+  border-top: 1px solid #F0E0B8;
   padding-top: 16px;
 }
 
@@ -526,7 +526,7 @@
 
 .book-left {
   padding: 52px 48px;
-  background: var(--g);
+  background: #F5EFE0;
   position: relative;
   overflow: hidden;
 }
@@ -537,7 +537,7 @@
   top: -80px; right: -80px;
   width: 360px; height: 360px;
   border-radius: 50%;
-  background: rgba(168,230,0,.05);
+  background: rgba(184,137,42,.06);
   pointer-events: none;
 }
 
@@ -561,9 +561,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(168,230,0,.13);
-  border: 1px solid rgba(168,230,0,.28);
-  color: var(--y);
+  background: #EAD9B0;
+  border: 1px solid #D4B87A;
+  color: #B8892A;
   font-size: 11.5px;
   font-weight: 800;
   letter-spacing: 1.2px;
@@ -576,18 +576,18 @@
 .book-left h2 {
   font-family: var(--serif);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  color: #fff;
+  color: #1C1208;
   line-height: 1.1;
   margin-bottom: 14px;
 }
 
 .book-left h2 em {
-  color: var(--y);
+  color: #B8892A;
   font-style: italic;
 }
 
 .book-left-desc {
-  color: rgba(255,255,255,.6);
+  color: #5A4A28;
   font-size: 15px;
   line-height: 1.75;
   margin-bottom: 28px;
@@ -597,8 +597,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  background: rgba(168,230,0,.1);
-  border: 1.5px solid rgba(168,230,0,.25);
+  background: #EAD9B0;
+  border: 1.5px solid #D4B87A;
   border-radius: 16px;
   padding: 16px 20px;
   margin-bottom: 24px;
@@ -622,7 +622,7 @@
 }
 
 .book-phone-label {
-  color: rgba(255,255,255,.4);
+  color: #8A7560;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -632,7 +632,7 @@
 }
 
 .book-phone-num {
-  color: var(--y);
+  color: #B8892A;
   font-size: 17px;
   font-weight: 800;
   display: block;
@@ -649,20 +649,20 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: rgba(255,255,255,.75);
+  color: #4A3A28;
   font-size: 14px;
 }
 
 .bk-chk {
   width: 22px; height: 22px;
-  background: rgba(168,230,0,.15);
-  border: 1px solid rgba(168,230,0,.32);
+  background: #EAD9B0;
+  border: 1px solid #D4B87A;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 11px;
-  color: var(--y);
+  color: #B8892A;
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -673,7 +673,7 @@
 }
 
 .book-team-label {
-  color: rgba(255,255,255,.35);
+  color: #8A7560;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -695,13 +695,13 @@
 }
 
 .book-team-text {
-  color: rgba(255,255,255,.6);
+  color: #5A4A28;
   font-size: 13px;
   margin-left: 6px;
 }
 
 .book-team-text strong {
-  color: #fff;
+  color: #1C1208;
   font-weight: 700;
 }
 
@@ -709,7 +709,7 @@
 .book-right {
   padding: 44px 36px;
   background: #fff;
-  border-left: 1.5px solid #ccebd8;
+  border-left: 1.5px solid #EAD9A8;
   overflow-y: auto;
 }
 
@@ -753,7 +753,7 @@
 .fg textarea {
   width: 100%;
   padding: 11px 13px;
-  border: 1.5px solid #c0ddc8;
+  border: 1.5px solid #E0D090;
   border-radius: 10px;
   font-size: 14px;
   font-family: var(--sans);
@@ -767,7 +767,7 @@
 .fg select:focus,
 .fg textarea:focus {
   border-color: var(--g);
-  box-shadow: 0 0 0 3px rgba(0,61,46,.08);
+  box-shadow: 0 0 0 3px rgba(184,137,42,.08);
 }
 
 .fg textarea {
@@ -806,15 +806,15 @@
   background: #fff;
   border-radius: 16px;
   padding: 22px;
-  border: 1.5px solid #ccebd8;
+  border: 1.5px solid #EAD9A8;
   display: flex;
   gap: 14px;
   transition: .3s;
 }
 
 .info-card:hover {
-  border-color: #95d4a8;
-  box-shadow: 0 4px 18px rgba(0,61,46,.08);
+  border-color: #C9A84C;
+  box-shadow: 0 4px 18px rgba(184,137,42,.08);
 }
 
 .info-card.clickable { cursor: pointer; }

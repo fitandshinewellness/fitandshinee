@@ -5,7 +5,7 @@
 
 /* ── TOP INFO BAR ── */
 .topbar {
-  background: var(--g);
+  background: #F0E8D4;
   padding: 8px 24px;
   display: flex;
   align-items: center;
@@ -26,12 +26,12 @@
   align-items: center;
   gap: 7px;
   font-size: 12.5px;
-  color: rgba(255,255,255,.78);
+  color: #5A4A28;
   font-weight: 500;
 }
 
 .tb-item a {
-  color: var(--y);
+  color: #B8892A;
   font-weight: 700;
 }
 
@@ -47,7 +47,7 @@
 
 .tb-link {
   font-size: 12px;
-  color: rgba(255,255,255,.65);
+  color: #5A4A28;
   padding: 4px 13px;
   border: 1px solid rgba(255,255,255,.2);
   border-radius: 20px;
@@ -55,13 +55,13 @@
 }
 
 .tb-link:hover {
-  background: rgba(255,255,255,.1);
-  color: #fff;
+  background: #E8D9B8;
+  color: #1C1208;
 }
 
 .tb-book {
-  background: var(--y);
-  color: var(--g);
+  background: #D4B87A;
+  color: #FAF6EE;
   font-size: 12px;
   font-weight: 800;
   padding: 5px 15px;
@@ -76,8 +76,8 @@
 
 /* ── NAVIGATION ── */
 .nav-outer {
-  background: rgba(255,255,255,.97);
-  border-bottom: 1.5px solid #ccebd8;
+  background: #FFFFFF;
+  border-bottom: 2px solid #D4B87A;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -103,7 +103,7 @@
 }
 
 .logo-icon {
-  width: 56px;
+  width: 58px;
   height: auto;
   display: flex;
   align-items: center;
@@ -123,10 +123,10 @@
 }
 
 .logo-name {
-  font-family: var(--serif);
-  font-size: 22px;
+  font-family: var(--accent);
+  font-size: 24px;
   font-weight: 700;
-  color: var(--g);
+  color: #B8892A;
   display: block;
   line-height: 1.1;
   letter-spacing: .2px;
@@ -161,13 +161,13 @@
 
 .nl:hover,
 .nl.act {
-  background: var(--yl);
-  color: var(--g);
+  background: #FAF6EE;
+  color: #B8892A;
   font-weight: 600;
 }
 
 .nav-cta {
-  background: var(--g);
+  background: #B8892A;
   color: var(--y);
   font-weight: 700;
   font-size: 14px;
@@ -181,7 +181,7 @@
 }
 
 .nav-cta:hover {
-  background: var(--gm);
+  background: #9A7220;
   transform: translateY(-1px);
   box-shadow: var(--shadow);
 }
@@ -200,7 +200,7 @@
 .mob-nav {
   display: none;
   background: #fff;
-  border-top: 1px solid #ccebd8;
+  border-top: 1px solid #EAD9A8;
   padding: 12px 24px;
   animation: slideDown .25s ease;
 }
@@ -245,7 +245,7 @@
 
 /* ── FOOTER ── */
 .footer {
-  background: var(--g);
+  background: #F0E8D4;
   padding: 60px 24px 0;
 }
 
@@ -281,15 +281,15 @@
 }
 
 .fl-logo-name {
-  font-family: var(--serif);
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
+  font-family: var(--accent);
+  font-size: 22px;
+  font-weight: 400;
+  color: #1C1208;
 }
 
 .fl-desc {
   font-size: 13px;
-  color: rgba(255,255,255,.5);
+  color: #5A4A28;
   line-height: 1.75;
   margin-bottom: 20px;
 }
@@ -315,12 +315,12 @@
 
 .flc-text {
   font-size: 13px;
-  color: rgba(255,255,255,.55);
+  color: #5A4A28;
   line-height: 1.5;
 }
 
 .flc-text a {
-  color: var(--y);
+  color: #B8892A;
   font-weight: 700;
 }
 
@@ -333,7 +333,7 @@
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--y);
+  color: #B8892A;
   margin-bottom: 18px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(168,230,0,.14);
@@ -347,29 +347,29 @@
 
 .fc-links li {
   font-size: 13px;
-  color: rgba(255,255,255,.55);
+  color: #5A4A28;
   transition: .2s;
   cursor: pointer;
 }
 
 .fc-links li:hover {
-  color: #fff;
+  color: #1C1208;
   padding-left: 4px;
 }
 
 .fc-links li a {
-  color: rgba(255,255,255,.55);
+  color: #5A4A28;
   transition: .2s;
 }
 
 .fc-links li a:hover {
-  color: #fff;
+  color: #1C1208;
 }
 
 .footer-bot {
   max-width: 1280px;
   margin: 0 auto;
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid #D4B87A;
   padding: 18px 0;
   display: flex;
   align-items: center;
@@ -380,7 +380,7 @@
 
 .footer-bot p {
   font-size: 13px;
-  color: rgba(255,255,255,.35);
+  color: #8A7560;
 }
 
 .fbot-links {
@@ -390,11 +390,11 @@
 
 .fbot-links a {
   font-size: 12px;
-  color: rgba(255,255,255,.35);
+  color: #8A7560;
 }
 
 .fbot-links a:hover {
-  color: var(--y);
+  color: #B8892A;
 }
 
 /* ── WHATSAPP FLOAT BUTTON ── */
@@ -418,7 +418,7 @@
   border-radius: 10px;
   white-space: nowrap;
   display: none;
-  box-shadow: 0 4px 14px rgba(0,61,46,.35);
+  box-shadow: 0 4px 14px rgba(184,137,42,.35);
   border: 1px solid rgba(168,230,0,.28);
 }
 

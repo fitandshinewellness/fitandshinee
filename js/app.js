@@ -37,11 +37,11 @@ var SLIDES_DATA = [
   {
     bg: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1400&h=700&fit=crop&q=85',
     title: 'Expert Nutrition &amp;<br><em>Diet Consultation</em>',
-    sub: 'Certified nutritionist Shilpa designs custom meal plans built around your lifestyle for sustainable, lasting transformation.'
+    sub: 'Certified Wellness Coach Shilpa designs custom meal plans built around your lifestyle for sustainable, lasting transformation.'
   },
   {
-    bg: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1400&h=700&fit=crop&q=85',
-    title: 'Precision Inch Loss<br><em>Therapy Programs</em>',
+    bg: 'https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1400&h=700&fit=crop&q=85',
+    title: 'Precision Inch Loss<br><em>Programs</em>',
     sub: 'Targeted localised treatments for belly, thighs, arms, and hips — measurable results from your very first session.'
   },
   {
@@ -282,14 +282,14 @@ function animN(elId, target, suffix, dur) {
 function runAllCounters() {
   /* Hero stat bar counters */
   animN('hn1', 1000, '+', 1800);
-  animN('hn2',   15, '+', 1400);
+  animN('hn2',   12, '+', 1400);
   animN('hn3', 5000, '+', 2200);
   animN('hn4',   98, '%', 1600);
 
   /* Stats section counters */
   animN('s1', 1000, '+', 1800);
   animN('s2', 5000, '+', 2200);
-  animN('s3',   15, '+', 1400);
+  animN('s3',   12, '+', 1400);
   animN('s4',    6,  '', 1200);
   animN('s5',   98, '%', 1600);
 
