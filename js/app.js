@@ -40,7 +40,7 @@ var SLIDES_DATA = [
     sub: 'Certified Wellness Coach Shilpa designs custom meal plans built around your lifestyle for sustainable, lasting transformation.'
   },
   {
-    bg: 'https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=1400&h=700&fit=crop&q=85',
+    bg: 'assets/images/hero-inch-loss.jpg',
     title: 'Precision Inch Loss<br><em>Programs</em>',
     sub: 'Targeted localised treatments for belly, thighs, arms, and hips — measurable results from your very first session.'
   },
