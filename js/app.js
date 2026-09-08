@@ -31,8 +31,8 @@ var SLIDES_DATA = [
   },
   {
     bg: 'https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=1400&h=700&fit=crop&q=85',
-    title: 'Advanced Body<br><em>Slimming Treatments</em>',
-    sub: 'Cutting-edge non-invasive technology to eliminate stubborn fat and sculpt your ideal body — zero pain, zero downtime, visible results.'
+    title: 'Your Journey to a Healthier <br><em>Lifestyle Starts Here</em>',
+    sub: 'Personalized nutrition, fitness and wellness programs designed to help you build healthier habits and achieve your lifestyle goals.'
   },
   {
     bg: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1400&h=700&fit=crop&q=85',
