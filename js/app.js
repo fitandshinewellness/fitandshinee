@@ -137,7 +137,7 @@ var PAGE_META = {
   'about': {
     title:       'Weight Loss & Weight Gain Center in Ahmedabad | About Fit & Shine',
     description: 'Learn more about Fit & Shine Ahmedabad, trusted for personalized weight loss programs, healthy weight gain plans, nutrition coaching and wellness transformation for men and women.',
-    keywords:    'weight loss center Ahmedabad, weight gain program Ahmedabad, nutrition coaching Ahmedabad, personalized diet consultation, wellness center Ahmedabad, healthy lifestyle transformation, fat loss coaching Ahmedabad'
+    keywords:    'weight loss center Ahmedabad, weight gain program Ahmedabad, nutrition coaching Ahmedabad, personalized diet consultation, Ahmedabad, healthy lifestyle transformation, fat loss coaching Ahmedabad'
   },
   'testimonials': {
     title:       'Client Success Stories & Results | Fit & Shine Ahmedabad',
@@ -147,7 +147,7 @@ var PAGE_META = {
   'contact': {
     title:       'Contact Fit & Shine Wellness Centre | Ahmedabad',
     description: 'Get in touch with Fit & Shine Wellness Centre in Ahmedabad. Book a free consultation for personalized weight loss, nutrition coaching or wellness programs.',
-    keywords:    'contact Fit and Shine Ahmedabad, wellness center contact Ahmedabad, book weight loss consultation Ahmedabad'
+    keywords:    'contact Fit and Shine Ahmedabad, contact Ahmedabad, book weight loss consultation Ahmedabad'
   },
   'book': {
     title:       'Book Free Consultation | Fit & Shine Wellness Centre Ahmedabad',
